@@ -8,15 +8,19 @@
     display: table;
     clear: both;
 }
-.inline {
-    display: inline-block;
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #6F6F6F;
 }
 body {
     font-family: 'Roboto', sans-serif;
     color: #fff;
 }
 
-
+/* ASIDE MENU */
 .nav-menu {
     background-color: rgb(0, 0, 0);
     width: 50px;
@@ -30,12 +34,8 @@ body {
     background-color: #141922;
     height: calc(100vh - 90px) ;
     overflow-y: auto;
-    
 }
-.player-nav {
-    background-color: #282828;
-    height: 90px;
-}
+
 .icon {
     height: 50px;
     width: 50px;
@@ -46,10 +46,37 @@ body {
 .wrap-top-icon-sm {
     display: none;
 }
+.wrap-user-sm {
+    display: none;
+}
+hr {
+    width: 200px;
+    margin: auto;
+    opacity: 0.3;
+}
 
+/* /.ASIDE MENU */
 
+/* FOOTER */
 
-
+.player-nav {
+    background-color: #282828;
+    height: 90px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.onplay-lft {
+    display: flex;
+}
+.controller {
+    display: flex;
+    flex-direction: column;
+}
+.progress-time {
+    display: flex;
+}
 
 
 /* Small devices (tablets, 768px and up) */
@@ -63,6 +90,18 @@ body {
     .nav-menu {
         width: 230px;
     }
+    .nav-search p,
+    .crea p,
+    .wrap-user-sm p {
+        display: inline-block;
+    }
+    .wrap-user-xs {
+        display: none;
+    }
+    .wrap-user-sm {
+        display: block;
+    }
+
 }
 
 /* Medium devices (desktops, 992px and up) */
