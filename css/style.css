@@ -191,8 +191,14 @@ hr {
 }
 
 .volume {
-    width: 20%;
+    display: flex;
+    align-items: center;
+    width: 30%;
     max-width: 200px;
+}
+.volume i {
+    font-size: 12px;
+    margin: 0 6px;
 }
 .line {
     height: 5px;
@@ -200,6 +206,16 @@ hr {
     border-radius: 25px;
     background-color: #5A5A5A;
     margin: 0px 5%;
+    position: relative;
+}
+.line-top {
+    height: 5px;
+    width: 20%;
+    border-radius: 25px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
