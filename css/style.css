@@ -95,6 +95,9 @@ hr {
     overflow-y: auto;
     padding: 16px;
 }
+.wrapper-items h1 {
+    margin: 16px 0 32px;
+}
 .menu-moods {
     text-align: center;
     text-transform: uppercase;
@@ -109,7 +112,8 @@ hr {
 }
 .album-item {
     height: 200px;
-    padding: 16px;
+    padding-right: 16px;
+    margin-bottom: 60px;
     text-align: center;
 }
 .album-item img {
@@ -220,6 +224,19 @@ hr {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+/* DECO ELEMENTS */
+
+/* line before elements */
+li.pippo::before {
+    content: ".";
+    vertical-align: middle;
+    font-size: 24px;
+    background-color: #ADFF2F;
+    color: #ADFF2F;
+    margin-left: -20px;
+    margin-right: 5px;
 }
 
 
