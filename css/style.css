@@ -85,7 +85,6 @@ hr {
     align-items: center;
     overflow: hidden;
     margin-bottom: 5px;
-
 }
 
 
@@ -109,7 +108,12 @@ hr {
     font-weight: 900;
 }
 .album-item {
+    height: 200px;
+    padding: 16px;
     text-align: center;
+}
+.album-item img {
+    height: 100%;
 }
 .albums-played {
     display: flex;
