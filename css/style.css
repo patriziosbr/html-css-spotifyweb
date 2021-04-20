@@ -146,7 +146,8 @@ hr {
 .onplay-lft {
     display: flex;
     align-items: center;
-    width: 210px;
+    width: 20%;
+    max-width: 200px;
     justify-content: space-between;
 }
 .onplay-lft img {
@@ -158,6 +159,9 @@ hr {
 }
 .foot_title_wrap {
     margin-left: 8px;
+}
+.wrap_icon_lft i{
+    padding: 2px;
 }
 
 .controller {
