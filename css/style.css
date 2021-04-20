@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-.clearfix:after {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
@@ -46,12 +46,17 @@ body {
 .icon {
     height: 50px;
     width: 50px;
-    text-align: center;
     padding: 10px;
-    margin-bottom: 5px; /* forse da levare*/
 }
+.icon-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
 .icon-small img {
-    width: 70%;
+    width: 20px;
     text-align: center;
 }
 .wrap-top-icon-sm {
@@ -62,9 +67,27 @@ body {
 }
 hr {
     width: 200px;
-    margin: auto;
+    margin: 0 0 16px;
     opacity: 0.3;
 }
+.user-list-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user_bg {
+    background-color: #808080;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 5px;
+
+}
+
 
 /* MAIN AREA MOODS*/
 .wrapper-items {
@@ -79,9 +102,10 @@ hr {
 }
 .menu-moods li {
     display: inline-block;
+    padding: 4px;
 }
 .menu-moods a {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 900;
 }
 .album-item {
@@ -130,20 +154,82 @@ hr {
     }
     .nav-menu {
         width: 230px;
+        padding: 16px;
+        overflow: hidden;
     }
-    .nav-search p,
+    .icon-logo-sm {
+        margin-bottom: 16px;
+    }
+    .icon-logo-sm img{
+        height: 40px;
+    }
+    .nav-search-sm p,
     .crea p,
     .wrap-user-sm p {
         display: inline-block;
+        vertical-align: middle;
     }
     .wrap-user-xs {
         display: none;
     }
     .wrap-user-sm {
         display: block;
-        overflow-y: hidden;
     }
-
+    .nav-search-sm img{
+        height: 30px;
+        vertical-align: middle;
+    }
+    .nav-search-sm li {
+        margin-bottom: 8px;
+    }
+    .playlist h5 {
+        font-size: 14px;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding: 16px 0 8px;
+    }
+    .crea {
+        margin-bottom: 16px;
+    }
+    .crea i {
+        background-color: #ccc;
+        color: #000;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 10px;
+        font-size: 22px;
+    }
+    .crea p {
+        font-size: 16px;
+        font-weight: 900;
+    }
+    .palylist_name {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    .palylist_name li {
+        margin-bottom: 8px;
+    }
+    .wrap-user-sm li{
+        height: 40px;
+    }
+    .wrap-user-sm li a{
+        height: 40px;
+    }
+    .user-sm{
+        height: 40px;
+        vertical-align: middle;
+        margin-right: 8px;
+        background-color: #ccc;
+        border-radius: 50%;
+    }
+    .download {
+        height: 30px;
+        vertical-align: middle;
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
