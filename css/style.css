@@ -89,7 +89,7 @@ hr {
 }
 
 
-/* MAIN AREA MOODS*/
+/* MAIN AREA*/
 .wrapper-items {
     background-color: #141922;
     height: calc(100vh - 90px) ;
@@ -124,6 +124,16 @@ hr {
 
 
 /* FOOTER */
+.foot_title {
+    font-size: 13px;
+    font-weight: 700;
+}
+.foot_sub {
+    font-size: 11px;
+    font-weight: 700;
+    color: #838383;
+}
+
 .player-nav {
     background-color: #282828;
     height: 90px;
@@ -132,9 +142,24 @@ hr {
     justify-content: space-between;
     align-items: center;
 }
+
 .onplay-lft {
     display: flex;
+    align-items: center;
+    width: 210px;
+    justify-content: space-between;
 }
+.onplay-lft img {
+    height: 40px;
+}
+.cd_title_wrap {
+    display: flex;
+    align-items: center;
+}
+.foot_title_wrap {
+    margin-left: 8px;
+}
+
 .controller {
     display: flex;
     flex-direction: column;
@@ -143,6 +168,9 @@ hr {
     display: flex;
 }
 
+.volume {
+    width: 29%;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media all and (min-width:768px) {
