@@ -165,16 +165,43 @@ hr {
 }
 
 .controller {
+    width: 40%;
+    max-width: 650px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.icon-central {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.icon-central i {
+    margin: 0 8px;
 }
 .progress-time {
+    width: 100%;
     display: flex;
+    align-items: center;
+}
+.progress-time p {
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
 }
 
 .volume {
-    width: 29%;
+    width: 20%;
+    max-width: 200px;
 }
+.line {
+    height: 5px;
+    width: 100%;
+    border-radius: 25px;
+    background-color: #5A5A5A;
+    margin: 0px 5%;
+}
+
 
 /* Small devices (tablets, 768px and up) */
 @media all and (min-width:768px) {
