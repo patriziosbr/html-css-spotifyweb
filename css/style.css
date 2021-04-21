@@ -27,6 +27,7 @@ h2 {
 .subt {
     font-size: 14px;
     font-weight: 700;
+    color: #6F6F6F;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -89,14 +90,45 @@ hr {
 
 
 /* MAIN AREA*/
+
+/* overlay top */
+.overlay_cta {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 80px;
+    background: rgba(0,0,0,0.5);
+    width: calc(100% - 50px);
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.btn {
+    border: 1px solid #fff;
+    padding: 12px 40px;
+    border-radius: 20px;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+.btn:hover {
+    transform: scale(1.05);
+}
+
 .wrapper-items {
     background-color: #141922;
     height: calc(100vh - 90px) ;
     overflow-y: auto;
     padding: 16px;
+    padding-top: 80px;
 }
 .wrapper-items h1 {
-    margin: 16px 0 32px;
+    margin: 16px 0;
+}
+.wrapper-items p.subt {
+    margin-bottom: 32px;
 }
 .menu-moods {
     text-align: center;
@@ -110,6 +142,21 @@ hr {
     font-size: 13px;
     font-weight: 900;
 }
+
+/*deco menu moods*/
+li.green_underline {
+    position: relative;
+}
+.absloute_line {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate( -50% , 0);
+    height: 3px;
+    width: 50%;
+    background-color: #ADFF2F;
+}
+
 .album-item {
     height: 200px;
     padding-right: 16px;
@@ -229,7 +276,7 @@ hr {
 /* DECO ELEMENTS */
 
 /* line before elements */
-li.pippo::before {
+.line_green::before {
     content: ".";
     vertical-align: middle;
     font-size: 24px;
@@ -315,6 +362,11 @@ li.pippo::before {
     .wrap-user-sm li a{
         height: 40px;
     }
+    p.jhon {
+        font-size: 15px;
+        color: #fff;
+        font-weight: 700;
+    } 
     .user-sm{
         height: 40px;
         vertical-align: middle;
@@ -325,6 +377,11 @@ li.pippo::before {
     .download {
         height: 30px;
         vertical-align: middle;
+    }
+
+    /* overlay main*/
+    .overlay_cta {
+        width: calc(100% - 230px);
     }
 }
 
