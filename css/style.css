@@ -159,8 +159,10 @@ li.green_underline {
 }
 
 .album-item {
-    height: 200px;
+    max-height: 180px;
+    max-width: 180px;
     padding-right: 16px;
+    margin-right: 16px;
     margin-bottom: 60px;
     text-align: center;
 }
@@ -171,12 +173,17 @@ li.green_underline {
     display: flex;
     flex-wrap: wrap;
 }
-.fake-album {
+/* .fake-album {
     height: 200px;
     width: 200px;
     display: inline-block;
     background-color: #ccc;
+} */
+.album-item.round-album img {
+    border-radius: 50%;
 }
+
+
 
 
 /* FOOTER */
@@ -282,9 +289,7 @@ p.foot_sub:hover {
     left: 0;
     
 }
-.dot_hover {
 
-}
 .line:hover .dot_hover {
     position: absolute;
     top: 50%;
