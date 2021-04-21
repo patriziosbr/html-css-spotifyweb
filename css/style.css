@@ -21,8 +21,9 @@ h1 {
     color: #fff;
 }
 h2 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 900;
+    padding: 8px 0;
 }
 .subt {
     font-size: 14px;
@@ -126,7 +127,7 @@ hr {
     padding-top: 80px;
 }
 .wrapper-items h1 {
-    margin: 16px 0;
+    margin: 48px 0 16px;
 }
 .wrapper-items p.subt {
     margin-bottom: 32px;
@@ -143,6 +144,51 @@ hr {
     font-size: 13px;
     font-weight: 900;
 }
+.albums-played {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.album-item {
+    max-height: 180px;
+    max-width: 180px;
+    margin-right: 16px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.album-item img {
+    height: 100%;
+}
+.layer_wrap {
+    height: 100%;
+    position: relative;
+}
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.layer i {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+} 
+.layer:hover i,
+.layer:hover {
+    display: block;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+/* .fake-album {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    background-color: #ccc;
+} */
 
 /*deco menu moods*/
 li.green_underline {
@@ -158,27 +204,6 @@ li.green_underline {
     background-color: #ADFF2F;
 }
 
-.album-item {
-    max-height: 180px;
-    max-width: 180px;
-    padding-right: 16px;
-    margin-right: 16px;
-    margin-bottom: 60px;
-    text-align: center;
-}
-.album-item img {
-    height: 100%;
-}
-.albums-played {
-    display: flex;
-    flex-wrap: wrap;
-}
-/* .fake-album {
-    height: 200px;
-    width: 200px;
-    display: inline-block;
-    background-color: #ccc;
-} */
 .album-item.round-album img {
     border-radius: 50%;
 }
