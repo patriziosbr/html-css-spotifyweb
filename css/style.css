@@ -140,6 +140,7 @@ hr {
 .menu-moods li {
     display: inline-block;
     padding: 4px;
+    margin: 4px;
 }
 .menu-moods a {
     font-size: 13px;
@@ -156,10 +157,10 @@ hr {
 .album-item {
    text-align: center;
    margin: 32px 16px 32px 0;
-   width: 200px;
+   width: 180px;
 }
 .layer_wrap img {
-    height: 200px;
+    height: 180px;
 }
 .layer_wrap {
     position: relative;
@@ -466,6 +467,14 @@ p.foot_sub:hover {
     .overlay_cta {
         width: calc(100% - 230px);
     }
+
+    .album-item {
+        width: 220px;
+     }
+     .layer_wrap img {
+         height: 220px;
+     }
+
 }
 
 /* Medium devices (desktops, 992px and up) */
