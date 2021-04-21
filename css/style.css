@@ -130,9 +130,7 @@ hr {
 .wrapper-items h1 {
     margin: 48px 0 16px;
 }
-.wrapper-items p.subt {
-    /* margin-bottom: 32px; */
-}
+
 .menu-moods {
     text-align: center;
     text-transform: uppercase;
@@ -147,7 +145,6 @@ hr {
     font-weight: 900;
 }
 
-/* da rifare */
 
 .albums-played {
     display: flex;
