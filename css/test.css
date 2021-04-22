@@ -357,8 +357,20 @@ p.foot_sub:hover {
 
 /* DECO ELEMENTS */
 
-/* line before elements */
-.line_green::before {
+/* LINE GREEN HOME */
+.line_green_home {
+    position: relative;
+}
+.line_green {
+    position: absolute;
+    top: 50%;
+    right: 110%;
+    transform: translate(-50% , -50%);
+    width: 3px;
+    height: 10px;
+    background-color: #ADFF2F;
+}
+/* .line_green::before {
     content: ".";
     vertical-align: middle;
     font-size: 24px;
@@ -366,7 +378,7 @@ p.foot_sub:hover {
     color: #ADFF2F;
     margin-left: -20px;
     margin-right: 8px;
-}
+} */
 
 /* main top nav mood */
 .menu-moods li:hover a {
@@ -410,9 +422,6 @@ p.foot_sub:hover {
     .icon-logo-sm img{
         height: 40px;
     }
-    .nav-search-sm {
-        overflow-y: hidden;
-    }
     .nav-search-sm p,
     .crea p,
     .wrap-user-sm p {
@@ -434,7 +443,7 @@ p.foot_sub:hover {
         color: #fff;
     }
     /* /hover */
-    .line_green p {
+    .line_green_home p {
         color: #fff;
     }
     .wrap-user-xs {
@@ -443,7 +452,7 @@ p.foot_sub:hover {
     .wrap-user-sm {
         display: block;
         height: 100px;
-        overflow-y: hidden;
+        overflow: hidden;
     }
     .nav-search-sm img{
         height: 30px;
